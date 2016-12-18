@@ -363,7 +363,7 @@ a:hover {color: #9A99FC;
     text-align:center;
     font-size:14pt;
 	font-weight:700; 
-    
+	margin-top: -2em;    
 }
 
 .slide:hover:before,.slide:hover .caption {
@@ -622,6 +622,7 @@ article {
 	}
 	
 	.slides .caption .title {
+		margin-top: -.5em;
 		font-family: 'Open Sans', sans-serif;
 	    font-size:14pt;
 	    font-weight:700; 

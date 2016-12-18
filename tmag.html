@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -26,57 +27,63 @@
 	<script src="js/main.js"></script>
 
 
-
 </head>
-<body>
 
-<!-- border	-->
-	<div id="top"></div>
-	<div id="bottom"></div>
+
+<body>
+	
 	<div id="right"></div>
 	<div id="left"></div>
-
-
-<!-- header -->
-	<header class="clearfix">
-		<div class="logo"><a href="index.html">JEN DOYLE</a></div>
+	<div id="top"></div>
+	<div id="bottom"></div>
+	
+	<div class="container">
+	
+	<div class="head">
+	
+		<div class="masthead">
 		
-	<!-- hamburger menu -->
-	<span class="toggle-button clearfix">
-	     <div class="menu-bar menu-bar-top"></div>
-	     <div class="menu-bar menu-bar-middle"></div>
-	     <div class="menu-bar menu-bar-bottom"></div>
-	</span>
-		<ul class="nav">
-			<li><a href="work.html">work</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="blog.html">blog</a></li>
-			<li><a href="contact.html">contact</a></li>
-		</ul>
-	</header>
-
-
+			<h1 class="brand"><a href="index.html"><img src="images/logo/logo.png"></a></h1>
+			
+			<button class="mobile-toggle" id="mobile-toggle"><a id="nav-toggle" href="#"><span></span></a></button>
+			
+			
+			<div class="mobile-takeover" id="takeover">
+				<ul class="nav site-nav">
+			   		<li><a href="work.html">work</a></li>
+			   		<li><a href="about.html">about</a></li>	
+			   		<li><a href="mailto:jdoyle@mica.edu">contact</a></li>	   
+				</ul>
+			</div>
+			
+		</div>
+		
+	</div>
+	
 <!-- about -->
-<div class="heading">
 
-	<div class="greeting">T Magazine</div>
+<div class="interior-content">
+
+	<div class="greeting">Drip</div>
 
 	<div class="purple-divider"></div>
 
-	<div class="project-description">
-		<p>This is an experimental lettering project for the cover of T Magazine. The letter T has been an iconic mark of The New York Times Magazine and many artists have taken this letter to create their own version. For this project, I used wood shavings and carvings to create the iconic T. After the letter was formed, I photographed it with different lighting and from multiple angles to create a more dynamic and interesting composition that the 3D letterform could have when presented on a two dimensional magazine cover. </p>
-	</div>
+	<p class="info">Drip Spray paint is a fun collection of spray paint inspired by the drip murals at Wynwood Walls, Miami. These spray paint colors are ones that are not necessarily typical spray paint colors and therefore have eccentric names such as Rhododendron Flush, Seafoam Crystal and Golden Fury. This project was created under the instruction of Tony Rutka.</p>
 
 	<div class="project-images">
+
 		<img src="images/tmag/tmag_1.jpg">
 		<img src="images/tmag/tmag_2.jpg">
 		<img src="images/tmag/tmag_3.jpg">
- 	</div>
 
+	</div>
 
-</div>
+	
+		
+</div>	
 
 <!-- footer -->
+
 	<footer>
 	
 		<div class="social-media">
@@ -91,6 +98,59 @@
 
 	</footer>
 
+</div>  <!-- container -->
+		
+	
+	</section>
+		
+	</div>
+	
+	    
+    <script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
+    
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	 $(document).ready(function () {
 
-</body>
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+	 </script>
+	 
+	 <script>
+		 $(function () {
+			 var $b = $('body');
+			 var $t = $('#mobile-toggle');
+			 var $m = $('#takeover');
+			 
+			 $('body').on('click', '#mobile-toggle', function(event){
+				 event.preventDefault;
+				 $b.toggleClass('activemenu');
+			 })
+		 });
+	 </script>
+	 
+	 <script>
+		 document.querySelector( "#nav-toggle" )
+		  .addEventListener( "click", function() {
+		    this.classList.toggle( "active" );
+		  });
+	 </script>
+ 
+  </body>
 </html>

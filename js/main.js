@@ -1,36 +1,18 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
+  var $toggleButton = $('.toggle-button');
+  $toggleButton.on('click', function() {
+    $(this).toggleClass('button-open');
+  });
+
+   $("#load-more").on("click", function (){
+        $("#show-this-on-click").slideDown();
+        $("#load-more").hide();
+        $("#load-less").show();
     });
 
-    $('.scrollup').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
 
+
+
+  
 });
-
-$(function () {
-	var $b = $('body');
-	var $t = $('#mobile-toggle');
-	var $m = $('#takeover');
-			 
-	 $('body').on('click', '#mobile-toggle', function(event){
-		event.preventDefault;
-			$b.toggleClass('activemenu');
-			 })
-		 });
-
-	 
-
- document.querySelector( "#nav-toggle" )
-	.addEventListener( "click", function() {
-		this.classList.toggle( "active" );
-	});

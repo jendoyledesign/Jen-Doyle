@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -27,69 +26,62 @@
 	<script src="js/main.js"></script>
 
 
+
 </head>
-
-
 <body>
-	
-	<div id="right"></div>
-	<div id="left"></div>
+
+<!-- border	-->
 	<div id="top"></div>
 	<div id="bottom"></div>
-	
-	<div class="container">
-	
-	<div class="head">
-	
-		<div class="masthead">
-		
-			<h1 class="brand"><a href="index.html"><img src="images/logo/logo.png"></a></h1>
-			
-			<button class="mobile-toggle" id="mobile-toggle"><a id="nav-toggle" href="#"><span></span></a></button>
-			
-			
-			<div class="mobile-takeover" id="takeover">
-				<ul class="nav site-nav">
-			   		<li><a href="work.html">work</a></li>
-			   		<li><a href="about.html">about</a></li>	
-			   		<li><a href="mailto:jdoyle@mica.edu">contact</a></li>	   
-				</ul>
-			</div>
-			
-		</div>
-		
-	</div>
-	
-<!-- about -->
+	<div id="right"></div>
+	<div id="left"></div>
 
-<div class="interior-content">
+
+<!-- header -->
+	<header class="clearfix">
+		<div class="logo"><a href="index.html">JEN DOYLE</a></div>
+		
+	<!-- hamburger menu -->
+	<span class="toggle-button clearfix">
+	     <div class="menu-bar menu-bar-top"></div>
+	     <div class="menu-bar menu-bar-middle"></div>
+	     <div class="menu-bar menu-bar-bottom"></div>
+	</span>
+		<ul class="nav">
+			<li><a href="work.html">work</a></li>
+			<li><a href="about.html">about</a></li>
+			<li><a href="blog.html">blog</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+	</header>
+
+
+<!-- about -->
+<div class="heading">
 
 	<div class="greeting">Julienne</div>
 
 	<div class="purple-divider"></div>
 
-	<p class="info">Julienne is a restaurant specializing in raw food where ingredients are simply prepared to perfection without the use of cooking. This restaurant caters to people who maintain healthy and active lifestyles. Julienne's goal is to create a warm and welcoming environment while maintaining a sleek and modern feel within the restaurant. It focuses on creating savory dishes by using the full potential of raw ingredients for a healthy and balanced diet that will detoxify and cleanse your system.</p>
-
-	<div class="project-images">
-
-		<img src="images/julienne/julienne_1.jpg">
-		<img src="images/julienne/julienne_2.jpg">
-		<img src="images/julienne/julienne_3.jpg">
-		<img src="images/julienne/julienne_4.jpg">
-		<img src="images/julienne/julienne_5.jpg">
-		<img src="images/julienne/julienne_6.jpg">
-		<img src="images/julienne/julienne_7.jpg">
-		<img src="images/julienne/julienne_8.jpg">
-		<img src="images/julienne/julienne_9.jpg">
-		
+	<div class="project-description">
+		<p>Julienne is a restaurant specializing in raw food where ingredients are simply prepared to perfection without the use of cooking. This restaurant caters to people who maintain healthy and active lifestyles. Julienne's goal is to create a warm and welcoming environment while maintaining a sleek and modern feel within the restaurant. It focuses on creating savory dishes by using the full potential of raw ingredients for a healthy and balanced diet that will detoxify and cleanse your system.</p>
 	</div>
 
+	<div class="project-images">
+		<img src="images/Julienne/Julienne_1.jpg">
+		<img src="images/Julienne/Julienne_2.jpg">
+		<img src="images/Julienne/Julienne_3.jpg">
+		<img src="images/Julienne/Julienne_4.jpg">
+		<img src="images/Julienne/Julienne_5.jpg">
+		<img src="images/Julienne/Julienne_6.jpg">
+		<img src="images/Julienne/Julienne_7.jpg">
+		<img src="images/Julienne/Julienne_8.jpg">
+		<img src="images/Julienne/Julienne_9.jpg">
+ 	</div>
 	
-		
-</div>	
+</div>
 
 <!-- footer -->
-
 	<footer>
 	
 		<div class="social-media">
@@ -104,59 +96,6 @@
 
 	</footer>
 
-</div>  <!-- container -->
-		
-	
-	</section>
-		
-	</div>
-	
-	    
-    <script src="js/classie.js"></script>
-	<script src="js/demo1.js"></script>
-    
-		
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>
-	 $(document).ready(function () {
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-
-    $('.scrollup').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-
-});
-	 </script>
-	 
-	 <script>
-		 $(function () {
-			 var $b = $('body');
-			 var $t = $('#mobile-toggle');
-			 var $m = $('#takeover');
-			 
-			 $('body').on('click', '#mobile-toggle', function(event){
-				 event.preventDefault;
-				 $b.toggleClass('activemenu');
-			 })
-		 });
-	 </script>
-	 
-	 <script>
-		 document.querySelector( "#nav-toggle" )
-		  .addEventListener( "click", function() {
-		    this.classList.toggle( "active" );
-		  });
-	 </script>
- 
-  </body>
+</body>
 </html>

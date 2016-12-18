@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Jen Doyle</title>
+
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Jen Doyle design portfolio website">
+
+	<!-- external CSS links-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+	<!-- font awesome icons -->
+	<script src="https://use.fontawesome.com/07faf0fb8b.js"></script>
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- external JS links-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</head>
+
+
+<body>
+	
+	<div id="right"></div>
+	<div id="left"></div>
+	<div id="top"></div>
+	<div id="bottom"></div>
+	
+	<div class="container">
+	
+	<div class="head">
+	
+		<div class="masthead">
+		
+			<h1 class="brand"><a href="index.html"><img src="images/logo/logo.png"></a></h1>
+			
+			<button class="mobile-toggle" id="mobile-toggle"><a id="nav-toggle" href="#"><span></span></a></button>
+			
+			
+			<div class="mobile-takeover" id="takeover">
+				<ul class="nav site-nav">
+			   		<li><a href="work.html">work</a></li>
+			   		<li><a href="about.html">about</a></li>	
+			   		<li><a href="mailto:jdoyle@mica.edu">contact</a></li>	   
+				</ul>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+<!-- about -->
+
+<div class="interior-content">
+
+	<div class="greeting">Off The Charts</div>
+
+	<div class="purple-divider"></div>
+
+	<p class="info">Off The Charts is an infographic book based on the music industry. It details the most important influential events that have affected the music industry between the 1940s to present day. This book is divided into sections based on each decade of music detailing the top albums, songs and artists of that time.</p>
+
+	<div class="project-images">
+
+		<img src="images/otc/otc_1.jpg">
+		<img src="images/otc/otc_2.jpg">
+		<img src="images/otc/otc_3.jpg">
+		<img src="images/otc/otc_4.jpg">
+		<img src="images/otc/otc_5.jpg">
+		<img src="images/otc/otc_6.jpg">
+		<img src="images/otc/otc_7.jpg">
+		<img src="images/otc/otc_8.jpg">
+		<img src="images/otc/otc_9.jpg">
+		<img src="images/otc/otc_10.jpg">
+		<img src="images/otc/otc_11.jpg">
+		<img src="images/otc/otc_12.jpg">
+		<img src="images/otc/otc_13.jpg">
+		<img src="images/otc/otc_14.jpg">
+
+	</div>
+
+	
+		
+</div>	
+
+<!-- footer -->
+
+	<footer>
+	
+		<div class="social-media">
+			<ul>
+				<li><a href="https://twitter.com/jendoyledesign"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/jen-doyle-26b56187"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.instagram.com/jendoyledesign/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+
+		<div class="copyright">&copy; JEN DOYLE 2016</div>
+
+	</footer>
+
+</div>  <!-- container -->
+		
+	
+	</section>
+		
+	</div>
+	
+	    
+    <script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
+    
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	 $(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+	 </script>
+	 
+	 <script>
+		 $(function () {
+			 var $b = $('body');
+			 var $t = $('#mobile-toggle');
+			 var $m = $('#takeover');
+			 
+			 $('body').on('click', '#mobile-toggle', function(event){
+				 event.preventDefault;
+				 $b.toggleClass('activemenu');
+			 })
+		 });
+	 </script>
+	 
+	 <script>
+		 document.querySelector( "#nav-toggle" )
+		  .addEventListener( "click", function() {
+		    this.classList.toggle( "active" );
+		  });
+	 </script>
+ 
+  </body>
+</html>

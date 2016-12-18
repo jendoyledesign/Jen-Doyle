@@ -107,7 +107,6 @@ a:hover {color: #9A99FC;
 	position: relative;
 }	
 
-.nav,
 .nav li {
 	display: inline;
 }
@@ -130,26 +129,25 @@ a:hover {color: #9A99FC;
 		
 }
 
-/* about */
+/* welcome */
 
-.purple-divider {
-	background: #9A99FC;
-	height: 4px;
-	width: 40px;
-	margin-top: .25em;
-	display: block;
- 	margin-left: auto;
-  	margin-right: auto;
-  	margin-bottom: 1em;
+.welcome {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 50pt;
+	font-weight: 800;
+	height: 800px;
+	padding-top: 2em;
 }
 
-.about {
+/* interior content */
+
+.interior-content {
 	width: 100%;
 	margin-top: 6em;
 	text-align: center;
 }
 
-.about img {
+.interior-content img {
 	max-width: 100%;
 	margin-top: 1em;
 }
@@ -163,31 +161,32 @@ a:hover {color: #9A99FC;
 	width: 50%;
 	padding-top: 1em;
 	padding-bottom: 1em;
-
 }
 
-.bio {
+.info {
 	font-family: 'Open Sans', Sans-serif;
 	text-align: center;
-	font-size: 12pt;
-	line-height: 1.5em;
+	font-size: 10pt;
+	line-height: 2em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.bio a 	{
+.info a 	{
 	text-decoration: none;
 	color: #9A99FC
 	font-weight:700;
 }
 
-.bio a:link	{
+.info a:link	{
 	color: #9A99FC;
 }
 
-.bio a:visited	{
+.info a:visited	{
 	color: #9A99FC;
 }
 
-.bio a:hover	{
+.info a:hover	{
 	color: #9A99FC;
 	-webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
@@ -216,29 +215,29 @@ a:hover {color: #9A99FC;
 	text-align: center;
 }
 
-.download a 	{
-	text-decoration: none;
-}
-
-.download a:link	{
-	color: #000;
-}
-
-.download a:visited	{
-	color: #000;
-}
-
-.download a:hover	{
-	color: #9A99FC;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	transition: all .3s ease;
-}
-
 .bio {
 	padding-top: 1em;
 }
 
+/* project pages */
+
+.purple-divider {
+	background: #9A99FC;
+	height: 4px;
+	width: 40px;
+	margin-top: -1em;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 1em;
+}
+
+
+/* project images */
+
+.project-images {
+	padding-bottom: 50px;
+}
 
 /* footer */
 
@@ -276,7 +275,6 @@ a:hover {color: #9A99FC;
 	-moz-transition: all .3s ease;
 	transition: all .3s ease;
 }
-
 
 .mobile-toggle {
 	display: none;
@@ -617,13 +615,6 @@ header em, .who {
 	float: right;
 }
 
-/* project images */
-.project-images img {
-	padding: 15px 0;
-}
-.project-images img:first-child {
-	padding: 0;
-}
 
 /* gallery */
 

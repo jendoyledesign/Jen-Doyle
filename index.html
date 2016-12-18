@@ -85,58 +85,6 @@
 	</footer>
 
 </div>  <!-- container -->
-		
-	
-	</section>
-		
-	</div>
-	
-	    
-    <script src="js/classie.js"></script>
-	<script src="js/demo1.js"></script>
-    
-		
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>
-	 $(document).ready(function () {
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-
-    $('.scrollup').click(function () {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-
-});
-	 </script>
-	 
-	 <script>
-		 $(function () {
-			 var $b = $('body');
-			 var $t = $('#mobile-toggle');
-			 var $m = $('#takeover');
-			 
-			 $('body').on('click', '#mobile-toggle', function(event){
-				 event.preventDefault;
-				 $b.toggleClass('activemenu');
-			 })
-		 });
-	 </script>
-	 
-	 <script>
-		 document.querySelector( "#nav-toggle" )
-		  .addEventListener( "click", function() {
-		    this.classList.toggle( "active" );
-		  });
-	 </script>
- 
   </body>
 </html>

@@ -115,6 +115,10 @@ header 	{
 	display: none;
 }
 
+.menu-wrap {
+	opacity: 0;
+}
+
 /* welcome */
 
 .welcome {
@@ -388,6 +392,7 @@ header 	{
 	  transform: rotate(-45deg) translate(8px, -7px);
 	  transition: .5s;
 	}
+
 
 /* footer */
 

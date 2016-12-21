@@ -72,20 +72,29 @@ a:hover {color: #9A99FC;
 
 
 /* header */
+.masthead{
+	max-width: 80em;
+	width: 90%;
+	margin: 0 auto;
+	position: fixed;	
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 9999;
+}
+	
 header 	{
 	position: fixed;
 	background: rgba(255,255,255,.9);
 	height: 5em;
 	width: 90%;
 	top: 0;
-	z-index: 100;
 }
 
 .logo 	{
-	font-size: 1em;
+	font-size: 12pt;
 	font-weight: 800;
 	float: left;
 	margin-top: 2em;
+	letter-spacing: 1px;
 }
 
 .logo a {
@@ -101,7 +110,7 @@ header 	{
 
 .nav {
 	float: right;
-	padding-top: 1em;
+		padding-top: 1em;
 }
 
 .nav li {
@@ -109,6 +118,7 @@ header 	{
 	font-size: 10pt;
 	font-weight: 400;
 	padding-left: 70px;
+	letter-spacing: 1px;
 }
 
 .toggle-button {
@@ -116,7 +126,7 @@ header 	{
 }
 
 .menu-wrap {
-	opacity: 0;
+	display: none;
 }
 
 /* welcome */
@@ -243,7 +253,7 @@ header 	{
 /* gallery */
 
 .gallery {
-	margin-top: 6em;
+	margin-top: 5em;
 	text-align: center;
 	margin-bottom: 5em;
 }
@@ -293,7 +303,7 @@ header 	{
 
 .social-media li {
 	display: inline-block;
-	padding-left: 2em;
+	padding-left: 1em;
 }
 
 .social-media a 	{
@@ -326,7 +336,7 @@ header 	{
     width:49.5%;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:550px) {
 
 /* header */
 
@@ -344,6 +354,60 @@ header 	{
     width:100%;
     margin-bottom: 1em;
 }
+
+/* menu wrap */
+
+	.menu-wrap {
+		display: block;
+		background-color: rgba(255,255,255,.9);
+		position: fixed;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		margin-left: -500px;
+		font-size: 1.5em;
+		font-weight: 600;
+		overflow: auto;
+		transition: .25s;
+		z-index: -1;
+		text-align: center;
+	}
+	.menu-show {
+		margin-left: -1em;
+	}
+	.menu-sidebar {
+		margin: 75px 0 80px 10px;
+		position: relative;
+		top: 70px;
+	}
+	.menu-sidebar li {
+		padding: 18px 22px 0;
+		list-style-type: none;
+		margin-right: 2em;
+	}
+	.menu-sidebar li > a {
+		color: #000;
+		font-size: 1.18em;
+		position: relative;
+	}
+	.menu-sidebar li > a::after {
+		content: "";
+		display: block;
+		height: 2px;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		left: 50%;
+		transform: translate(-50%);
+		background-image: linear-gradient(to right, transparent 50.3%, #9A99FC 50.3%);
+		transition: background-position .2s .1s ease-out;
+		background-size: 200% auto;
+		color: #9A99FC;
+	}
+	.menu-sidebar li > a:hover::after {
+		background-position: -100% 0;
+	}
+
 
 /* hamburger menu */
 
@@ -402,11 +466,12 @@ header 	{
 		float: none;
 		padding: 5em;
 	}
+
 	.social-media {
 		float: none;
 		text-align: center;
 		margin: 0 auto;
-		padding-right: 5em;
+		padding-right: 4em;
 	}
 
 }

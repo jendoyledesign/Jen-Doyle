@@ -214,8 +214,6 @@ a.link--text-in-p {
 	transition: all .3s ease;
 }
 
-
-
 .cta {
 	padding-top: 2em;
 	padding-bottom: 1em;
@@ -237,7 +235,7 @@ a.link--text-in-p {
 	line-height: 2;
 	font-size: 16px;
 	margin-bottom: 6em;
-
+	font-weight: 600;
 }
 
 /* arrows */

@@ -188,7 +188,8 @@ a.link--text-in-p {
 .info {
 	font-family: 'Open Sans', Sans-serif;
 	text-align: center;
-	font-size: 10pt;
+	font-size: 12pt;
+	font-weight: 400;
 	line-height: 2em;
 	margin-left: 8rem;
 	margin-right: 8rem;
@@ -319,7 +320,7 @@ footer {
 .copyright	{
 	font-size: .5em;
 	float: left;
-	padding-top: 2em;
+	padding-top: 3em;
 }
 
 .social-media	{

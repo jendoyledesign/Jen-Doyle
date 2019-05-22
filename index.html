@@ -21,6 +21,9 @@
 	<!-- font awesome icons -->
 	<script src="https://use.fontawesome.com/07faf0fb8b.js"></script>
 
+	<!-- external JS links-->
+	<script src="js/main.js"></script>
+
 
 </head>
 
@@ -30,20 +33,42 @@
 <div class="container">
 
 <!-- header -->
+
 <header>
 
-	<!-- menu -->
-
-	<span class="toggle-button clearfix">
-	     <div class="menu-bar menu-bar-top"></div>
-	     <div class="menu-bar menu-bar-middle"></div>
-	     <div class="menu-bar menu-bar-bottom"></div>
-	</span>
 
 <!-- logo -->
 	<div class="logo">
 		<a href="http://jendoyle.com/"><img src="images/logo/jdoyle-logo.svg" alt="jdoyle-logo"></a>
 	</div>
+
+
+<!-- menu -->
+
+<div class="menu" onclick="myFunction(this)""openNav()"">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Work</a>
+    <a href="#">Lettering</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+  </div>
+
+</div>
+
+
+</header>
 
 
 <!-- about -->

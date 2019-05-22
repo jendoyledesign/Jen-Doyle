@@ -1,15 +1,14 @@
-$(document).ready(function() {
+/* Hamburger menu animation */
+function myFunction(x) {
+  x.classList.toggle("change");
+}
 
-	var $toggleButton = $('.toggle-button'),
-    	$menuWrap = $('.menu-wrap'),
-    	$sidebarArrow = $('.sidebar-menu-arrow');
+/* Open */
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
 
-	// Hamburger button
-
-	$toggleButton.on('click', function() {
-		$(this).toggleClass('button-open');
-		$menuWrap.toggleClass('menu-show');
-	});
-
-
-});
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}

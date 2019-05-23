@@ -58,6 +58,7 @@ a:hover {color: #7988DB;
   cursor: pointer;
   float: right;
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 .bar1, .bar2, .bar3 {

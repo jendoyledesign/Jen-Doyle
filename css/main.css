@@ -40,9 +40,7 @@ a:hover {color: #7988DB;
 /* interior header */
 
 h1 {
-	padding-top: 4rem;
-	margin-left: 5rem;
-	margin-right: 5rem;
+	padding-top: 2rem;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
@@ -50,6 +48,11 @@ h1 {
 
 p {
 	text-align: center;
+	line-height: 1.5;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	padding-right: 5rem;
+	padding-left: 5rem;
 }
 
 header {
@@ -109,8 +112,12 @@ header {
 /* about */
 
 .interior-content {
-	margin-left: 1rem;
+	margin-top: 1rem;
 
+}
+
+.interior-header {
+	margin: 3rem;
 }
 
 .introduction {
@@ -186,6 +193,26 @@ header {
 	border-bottom: 0px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 16px;
+}
+
+.column img {
+  margin-top: 32px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
 @media screen and (max-width: 1280px) {
 
 	.introduction {
@@ -196,7 +223,29 @@ header {
 		margin-left: 0;
 		margin-right: 0;
 	}
+
+	p {
+	text-align: center;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	}
+
+	  .column {
+    flex: 32%;
+    max-width: 32%;
+  }
+
 }
+
+
+@media screen and (max-width:800px) {
+	  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
 
 @media screen and (max-width:550px) {
 	
@@ -206,12 +255,28 @@ header {
 
 	}
 
-	.interior-content {
-		margin-left: 1rem;
-	}
-
 	.introduction {
 		margin-top: 10rem;
 	}
 
+	p {
+	text-align: center;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+}
+
+	  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .interior-header {
+	margin: 1rem;
+}
+ 
+
+  .row {
+  	padding: 0;
+  }
 }

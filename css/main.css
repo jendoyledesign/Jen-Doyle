@@ -36,6 +36,62 @@ a:hover {color: #7988DB;
 
 }
 
+button {
+    border-color: rgba(256,256,256, 0);
+    border-style: solid;
+    border-width: 1px;
+    padding: 1px 7px 2px;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  background-color: #000000;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  width: 100%; /* 100% width */
+  text-align: left; /* Left align */
+  top: 50%;
+  margin-left: 3rem;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  font-family: 'Playfair Display';
+  font-size: 85px;
+  color: #ffffff;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #7988DB;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  float: right;
+  margin-right: 6rem;
+  margin-top: 2rem;
+}
+
 
 /* interior header */
 
@@ -53,7 +109,7 @@ p {
 }
 
 header {
-	padding-top: 1rem;
+	padding-top: 2rem;
 	padding-bottom: 2rem;
 	margin: 1rem;
 }
@@ -76,7 +132,7 @@ header {
   display: inline-block;
   cursor: pointer;
   float: right;
-
+  z-index: 9999;
 }
 
 .bar1, .bar2, .bar3 {
@@ -91,6 +147,7 @@ header {
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-8px, 8px) ;
   transform: rotate(-45deg) translate(-7px, 7px) ;
+  background-color: #fff;
 }
 
 /* Fade out the second bar */
@@ -102,6 +159,7 @@ header {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-7px, -7px) ;
+  background-color: #fff;
 }
 
 
@@ -277,4 +335,5 @@ header {
   .row {
   	padding: 0;
   }
+
 }
